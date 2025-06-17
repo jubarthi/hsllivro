@@ -1,178 +1,258 @@
-/* ... keep existing code (all previous styles) */
+/* 🔥 RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-/* Flipbook Real Styles */
-.flipbook {
-    position: relative;
-    width: 100%;
-    max-width: 900px;
-    height: 600px;
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f9f9f9;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* ✅ Container padrão */
+.container {
+    max-width: 1200px;
     margin: 0 auto;
-    perspective: 1400px;
-    background: linear-gradient(145deg, #f0f0f0, #e0e0e0);
-    border-radius: 12px;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
-    overflow: hidden;
+    padding: 0 20px;
 }
 
-.flipbook-page {
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    overflow: hidden;
-    transform-origin: left center;
-    transform-style: preserve-3d;
-    transition: transform 0.8s cubic-bezier(0.645, 0.045, 0.355, 1);
-    cursor: pointer;
+/* ✅ Header */
+.header {
+    background: rgba(44, 140, 116, 0.95);
+    padding: 20px 0;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
 
-.flipbook-page:hover {
-    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
-}
-
-.flipbook-page canvas {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    display: block;
-}
-
-.loading-pdf {
+.header-content {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    height: 100%;
-    font-size: 18px;
+}
+
+.logo {
+    height: 50px;
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #4FB89D;
+}
+
+/* ✅ Hero */
+.hero {
+    background: linear-gradient(145deg, #ffffff, #eaeaea);
+    padding: 80px 0;
+}
+
+.hero-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 50px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-title {
+    font-size: 42px;
+    margin-bottom: 20px;
     color: #2C8C74;
 }
 
-.loading-pdf i {
-    margin-right: 10px;
-    font-size: 24px;
+.hero-title .highlight {
+    color: #4FB89D;
 }
 
-.pdf-error {
+.hero-subtitle {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 14px 28px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s;
+}
+
+.btn-primary {
+    background: #2C8C74;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #4FB89D;
+}
+
+.btn-secondary {
+    background: white;
+    color: #2C8C74;
+    border: 2px solid #2C8C74;
+}
+
+.btn-secondary:hover {
+    background: #2C8C74;
+    color: white;
+}
+
+.hero-stats {
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 32px;
+    color: #2C8C74;
+    font-weight: 700;
+}
+
+.stat-label {
+    font-size: 14px;
+    color: #777;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.book-showcase {
+    position: relative;
+}
+
+.book-cover {
+    width: 300px;
+}
+
+.book-glow {
+    position: absolute;
+    width: 300px;
+    height: 100%;
+    background: radial-gradient(circle, rgba(79,184,157,0.3) 0%, transparent 70%);
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* ✅ Flipbook Section */
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #2C8C74;
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.flipbook-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 100%;
-    text-align: center;
-    color: #666;
-    padding: 40px;
+    gap: 20px;
 }
 
-.pdf-error i {
-    font-size: 48px;
-    color: #e74c3c;
-    margin-bottom: 20px;
+.flipbook-controls {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
-.pdf-error h3 {
-    margin-bottom: 10px;
-    color: #333;
-}
-
-.retry-btn {
-    margin-top: 20px;
-    padding: 12px 24px;
+.control-btn {
+    padding: 10px 20px;
     background: #2C8C74;
     color: white;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    transition: background 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: background 0.3s;
 }
 
-.retry-btn:hover {
+.control-btn:hover {
     background: #4FB89D;
 }
 
-.reading-progress {
-    position: fixed;
-    top: 80px;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background: rgba(255, 255, 255, 0.1);
-    z-index: 999;
+/* ✅ Footer */
+.footer {
+    background: #2C8C74;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 60px;
 }
 
-.progress-fill {
-    height: 100%;
-    background: linear-gradient(90deg, #2C8C74, #4FB89D);
-    width: 0%;
-    transition: width 0.3s ease;
-}
-
-/* Fullscreen Mode */
-.fullscreen-mode .flipbook {
-    max-width: 90vw;
-    height: 80vh;
-}
-
-/* Mobile Responsivo para Flipbook */
+/* ✅ Responsivo */
 @media (max-width: 768px) {
-    .flipbook {
-        height: 500px;
-        max-width: 95%;
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
     }
-    
-    .flipbook-page {
-        width: 90%;
-        left: 5%;
-    }
-    
-    .flipbook-controls {
+
+    .hero-buttons {
         flex-direction: column;
         gap: 10px;
-        padding: 15px;
     }
-    
-    .control-btn {
-        width: 100%;
+
+    .hero-image {
         justify-content: center;
     }
-    
-    .fullscreen-mode .flipbook {
-        max-width: 95vw;
-        height: 70vh;
+
+    .nav {
+        gap: 15px;
+    }
+
+    .hero-title {
+        font-size: 32px;
+    }
+
+    .section-title {
+        font-size: 28px;
     }
 }
 
 @media (max-width: 480px) {
-    .flipbook {
-        height: 400px;
-    }
-    
-    .section-subtitle {
-        font-size: 14px;
+    .hero-title {
+        font-size: 24px;
     }
 }
-
-/* Animação de entrada */
-.flipbook-section {
-    opacity: 0;
-    transform: translateY(50px);
-    animation: fadeInUp 0.8s ease-out forwards;
-}
-
-@keyframes fadeInUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Efeitos de hover melhorados */
-.control-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(44, 140, 116, 0.3);
-}
-
-.control-btn:active {
-    transform: translateY(0);
-}
- 
