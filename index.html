@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Novo Código de Publicidade Médica - Guia Completo | Hospital São Lucas</title>
 
-    <!-- SEO Meta Tags -->
+    <!-- SEO -->
     <meta name="description" content="Guia completo sobre o Novo Código de Publicidade Médica. Direitos, deveres, marketing ético e atendimento humanizado para médicos. Download gratuito.">
     <meta name="keywords" content="código publicidade médica, marketing médico ético, direitos médicos, deveres médicos, CFM, publicidade médica 2025">
     <meta name="author" content="Thiago Dias Schwanz">
@@ -14,9 +14,7 @@
     <!-- Open Graph -->
     <meta property="og:title" content="Novo Código de Publicidade Médica - Guia Completo">
     <meta property="og:description" content="Tudo que você precisa saber sobre o novo código: direitos, deveres e marketing médico ético.">
-    <meta property="og:type" content="website">
     <meta property="og:image" content="./capa.png">
-    <meta property="og:url" content="">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
@@ -24,7 +22,7 @@
     <meta name="twitter:description" content="Guia completo para médicos sobre publicidade ética e marketing médico.">
     <meta name="twitter:image" content="./capa.png">
 
-    <!-- Schema.org -->
+    <!-- Schema -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -35,17 +33,18 @@
     }
     </script>
 
-    <!-- ✅ Link CSS local funcionando -->
-    <link rel="stylesheet" type="text/css" href="./style.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
 
-    <!-- ✅ Fonts e Ícones com fallback -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-DWzT9CEf3jeYe5oHfFC+CMRt3KUQ7OmKPVJ47RxdbxKN0fZsycDLDnUwqSdi3WjaT7lI+8RBC7cy5m9Yf9dp9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" />
 
-    <!-- PDF.js Library -->
+    <!-- PDF.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
 </head>
 
@@ -65,7 +64,7 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section class="hero">
         <div class="container">
             <div class="hero-content">
@@ -79,12 +78,10 @@
                     </p>
                     <div class="hero-buttons">
                         <button class="btn-primary" onclick="openModal()">
-                            <i class="fas fa-download"></i>
-                            Baixar Livro Gratuito
+                            <i class="fas fa-download"></i> Baixar Livro Gratuito
                         </button>
                         <button class="btn-secondary" onclick="scrollToFlipbook()">
-                            <i class="fas fa-book-open"></i>
-                            Ler Online Agora
+                            <i class="fas fa-book-open"></i> Ler Online Agora
                         </button>
                     </div>
                     <div class="hero-stats">
@@ -104,7 +101,7 @@
                 </div>
                 <div class="hero-image">
                     <div class="book-showcase">
-                        <img src="capa.png" alt="Capa do Livro - Novo Código de Publicidade Médica" class="book-cover">
+                        <img src="capa.png" alt="Capa do Livro" class="book-cover">
                         <div class="book-glow"></div>
                     </div>
                 </div>
@@ -112,7 +109,7 @@
         </div>
     </section>
 
-    <!-- Flipbook Section -->
+    <!-- Flipbook -->
     <section id="flipbook" class="flipbook-section">
         <div class="container">
             <h2 class="section-title">Leia Online - Flipbook Real do PDF</h2>
@@ -121,23 +118,28 @@
                 <div class="flipbook"></div>
                 <div class="flipbook-controls">
                     <button id="prevPage" class="control-btn">
-                        <i class="fas fa-chevron-left"></i>
-                        Anterior
+                        <i class="fas fa-chevron-left"></i> Anterior
                     </button>
                     <span id="pageCounter" class="page-counter">Carregando...</span>
                     <button id="nextPage" class="control-btn">
-                        Próxima
-                        <i class="fas fa-chevron-right"></i>
+                        Próxima <i class="fas fa-chevron-right"></i>
                     </button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ⚙️ Script principal -->
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Autor do livro: Thiago Dias Schwanz | Divulgação: Jubarthi Marketing Médico | Iniciativa: Hospital São Lucas de Santos</p>
+        </div>
+    </footer>
+
+    <!-- Script Principal -->
     <script src="flipbook.js"></script>
     <script>
-        // ... funções do modal, envio de formulário, máscara de WhatsApp, etc.
+        // Aqui você insere funções de modal, formulário, whatsapp mask, etc.
     </script>
 </body>
 </html>
