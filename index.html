@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo Código de Publicidade Médica - Guia Completo | Hospital São Lucas</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Guia completo sobre o Novo Código de Publicidade Médica. Direitos, deveres, marketing ético e atendimento humanizado para médicos. Download gratuito.">
+    <meta name="keywords" content="código publicidade médica, marketing médico ético, direitos médicos, deveres médicos, CFM, publicidade médica 2025">
+    <meta name="author" content="Thiago Dias Schwanz">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Novo Código de Publicidade Médica - Guia Completo">
+    <meta property="og:description" content="Tudo que você precisa saber sobre o novo código: direitos, deveres e marketing médico ético.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./capa.png">
+    <meta property="og:url" content="">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Novo Código de Publicidade Médica">
+    <meta name="twitter:description" content="Guia completo para médicos sobre publicidade ética e marketing médico.">
+    <meta name="twitter:image" content="./capa.png">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Hospital São Lucas de Santos",
+        "url": "",
+        "logo": "./logo.png"
+    }
+    </script>
+    
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- PDF.js Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <img src="logo.png" alt="Hospital São Lucas" class="logo">
+                <nav class="nav">
+                    <a href="#flipbook" class="nav-link">Ler Online</a>
+                    <a href="#sobre" class="nav-link">Sobre o Código</a>
+                    <a href="#contato" class="nav-link">Contato</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="highlight">Novo Código de Publicidade Médica:</span><br>
+                        Seus Direitos, Seus Deveres e Seu Marketing com Segurança e Ética
+                    </h1>
+                    <p class="hero-subtitle">
+                        Tudo que você precisa saber para proteger sua carreira e sua imagem — comunicação médica ética, marketing autorizado e atendimento humanizado.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn-primary" onclick="openModal()">
+                            <i class="fas fa-download"></i>
+                            Baixar Livro Gratuito
+                        </button>
+                        <button class="btn-secondary" onclick="scrollToFlipbook()">
+                            <i class="fas fa-book-open"></i>
+                            Ler Online Agora
+                        </button>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">2025</span>
+                            <span class="stat-label">Novo Código</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Atualizado</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">CFM</span>
+                            <span class="stat-label">Aprovado</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="book-showcase">
+                        <img src="capa.png" alt="Capa do Livro - Novo Código de Publicidade Médica" class="book-cover">
+                        <div class="book-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flipbook Section -->
+    <section id="flipbook" class="flipbook-section">
+        <div class="container">
+            <h2 class="section-title">Leia Online - Flipbook Real do PDF</h2>
+            <p class="section-subtitle">Navegue pelo livro real com efeito realista de virar páginas - carregado diretamente do arquivo PDF</p>
+            <div class="flipbook-container">
+                <div class="flipbook"></div>
+                <div class="flipbook-controls">
+                    <button id="prevPage" class="control-btn">
+                        <i class="fas fa-chevron-left"></i>
+                        Anterior
+                    </button>
+                    <span id="pageCounter" class="page-counter">Carregando...</span>
+                    <button id="nextPage" class="control-btn">
+                        Próxima
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ... keep existing code (about section, cta section, footer, modal) -->
+
+    <script src="flipbook.js"></script>
+    <script>
+        // ... keep existing code (modal functions, form submission, whatsapp mask, etc)
+    </script>
+</body>
+</html> 
